@@ -1,0 +1,8 @@
+{
+  "name": "dependabot-reproducer-issue-15112",
+  "version": "1.0.0",
+  "description": "Reproducer for dependabot-core issue #15112",
+  "dependencies": {
+    "lodash": "4.17.15"
+  }
+}
