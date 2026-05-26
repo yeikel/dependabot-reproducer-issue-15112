@@ -20,15 +20,10 @@ npm error code ETARGET
 npm error notarget No matching version found for lodash@4.17.21 with a date before ...
 ```
 
-## Reproducing locally
+## Reproducer
 
-```sh
-# Fails - mimics what Dependabot runs for the version check
-npm install lodash@4.17.21 --package-lock-only --dry-run=true --ignore-scripts
+See https://github.com/yeikel/dependabot-reproducer-issue-15112/actions logs for error examples
 
-# Succeeds - the fix applied in dependabot-core PR for issue #15112
-npm install lodash@4.17.21 --package-lock-only --dry-run=true --ignore-scripts --min-release-age=0
-```
 
 ## Fix
 
